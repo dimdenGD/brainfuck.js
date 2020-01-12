@@ -1,5 +1,6 @@
 class Brainfuck {
 	constructor(program, input = "", size = 30000) {
+		if(!program) throw new Error("No program to interpret.");
 		this.program = program;
 		this.input = input;
 		this.size = size;
