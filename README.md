@@ -8,7 +8,9 @@ Another Brainfuck interpreter in JS
 ```js
 const program = "--[>--->->->++>-<<<<<-------]>--.>---------.>--..+++.>----.>+++++++++.<<.+++.------.<-.>>+.";
 const bf = new Brainfuck(program);
+let out = "";
 
-bf.on("out", o => console.log(o));
+bf.on("out", o => out += o);
+bf.on("done", () => console.log(out));
 bf.init();
 ```
