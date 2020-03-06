@@ -1,5 +1,5 @@
 # brainfuck.js
-Another Brainfuck interpreter in JS
+Another Brainfuck interpreter in JS. Blogpost: https://dimden.dev/blog/?id=6-brainfuck-js
 
 *Constructor: new Brainfuck(program, input, size)*.
 
